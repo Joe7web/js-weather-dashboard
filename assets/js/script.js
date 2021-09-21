@@ -7,7 +7,7 @@ var queryUrl = "http://api.openweathermap.org/data/2.5/weather?q= city  '&appid'
 
 fetch(queryUrl)
  .then(function(response) {
-     return response.json(
+     return response.json();
  })
  .then(function(data) {
      console.log(data);
