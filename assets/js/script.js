@@ -3,14 +3,15 @@ var apiKey = "c6d3bbeff16dae79f9c1ce09f526c2ee";
 
 var city
 
-var queryUrl = "http://api.openweathermap.org/data/2.5/weather?q= city  '&appid' =apiKey";
+var requestUrl = "http://api.openweathermap.org/data/2.5/weather?q=city&appid=apiKey";
 
-fetch(queryUrl)
- .then(function(response) {
-     return response.json();
- })
- .then(function(data) {
-     console.log(data);
- });
- 
+//function get API()
+
+fetch(requestUrl)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    console.log(data);
+  });
      
